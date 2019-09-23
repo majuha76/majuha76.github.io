@@ -1,0 +1,312 @@
+header { grid-area: header; }
+nav { grid-area: menu; }
+article { grid-area: main; }
+section { grid-area: section; }
+aside { grid-area: info; }
+footer { grid-area: footer; }
+
+@media screen and (min-width: 1200px){
+body {
+    display: grid;
+    grid-template-areas:
+      'header header header header header header'
+      'menu menu main main info info'
+      'section section main main info info'
+      'footer footer footer footer footer footer';
+    grid-gap: 1em;
+    padding: 1em;
+    background-image: url("img/bodytausta.jpg");
+    background-size: 100% 100%;
+    color: rgb(0, 255, 42);
+    font-weight: bold;
+    font-family: 'Arial Narrow', Arial, sans-serif;
+    font-size: 120%;
+  }
+
+h1.item1 {
+  color: rgb(255, 0, 0);
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+  font-size: 110%;
+  margin-left: 0.5em;
+}
+
+h2.item2 {
+  color: rgb(255, 255, 0);
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+  font-size: 130%;
+  margin-left: 0.5em;
+}
+
+p.item3 {
+  color: rgb(0, 255, 42);
+  font-weight: bold;
+  font-family: 'Arial Narrow', Arial, sans-serif;
+  font-size: 110%;
+  margin-left: 0.5em;
+}
+
+p.item4 {
+  color: rgb(0, 255, 42);
+  font-style: oblique;
+  font-family: 'Arial Narrow', Arial, sans-serif;
+  font-size: 100%;
+  margin-left: 0.5em;
+  margin-bottom: 2em;
+}
+
+h2.item5 {
+  color: rgb(255, 255, 0);
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+  font-size: 120%;
+  border: 10px solid transparent;
+  padding: 10px;
+  border-image: url(img/border.png) 30 round;
+  margin-left: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+  .wordart {
+    font-family: Arial, sans-serif;
+    font-size: 4em;
+    font-weight: bold;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .wordart.italic-outline {
+      transform: scale(1, 1.3);
+      -webkit-transform: scale(1, 1.3);
+      -moz-transform: scale(1, 1.3);
+      -o-transform: scale(1, 1.3);
+      -ms-transform: scale(1, 1.3);
+  }
+  
+  .wordart.italic-outline .text {
+      letter-spacing: -0.01em;
+      font-family: Arial, sans-serif;
+      font-weight: bold;
+      font-style: italic;
+      color: rgb(0, 255, 42);
+      -webkit-text-stroke: 0.01em #000;
+      filter: progid:DXImageTransform.Microsoft.Glow(Color=#000000, Strength=1);
+      text-shadow: 0.03em 0.03em 0 rgb(255, 0, 0);
+  }
+
+header {
+    border: 0.1em solid rgba(0, 0, 0, 0.01);
+    border-radius: 1em;
+    padding: 0.2em;
+    margin: 0.5em;
+    background-image: url("img/headertausta.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+  }
+  
+nav {
+  border: 0.1em solid rgba(0, 0, 0, 0.01);
+  border-radius: 1em;
+  padding: 0.2em;
+  margin: 0.5em;
+  background: rgba(119, 128, 0, 0.1);
+  background-size: cover;
+}
+
+section {
+  border: 0.1em solid rgba(0, 0, 0, 0.01);
+  border-radius: 1em;
+  padding: 0.2em;
+  margin: 0.5em;
+  background: rgba(119, 128, 0, 0.1);
+  background-size: cover;
+}
+
+aside {
+    text-shadow: 0.1em 0.1em #000000;
+    border: 0.1em solid rgba(0, 0, 0, 0.01);
+    border-radius: 1em;
+    padding: 0.2em;
+    margin: 0.5em;
+    background: rgba(119, 128, 0, 0.1);
+    background-size: cover;
+  }
+
+  article {
+    text-shadow: 0.1em 0.1em #000000;
+    border: 0.1em solid rgba(0, 0, 0, 0.1);
+    border-radius: 1em;
+    padding: 0.2em;
+    margin: 0.5em;
+    background-image: url("img/maintausta2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+footer {
+  font-family: Helvetica, sans-serif;
+  text-shadow: 0.1em 0.1em #000000;
+  border: 0.1em solid rgba(0, 0, 0, 0.01);
+  border-radius: 1em;
+  padding: 0.2em;
+  margin: 0.5em;
+  background-image: url("img/footertausta.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+}
+  
+ @media screen and (max-width: 1200px){
+  body {
+    display: flex;
+    flex-direction: column;
+    background-image: url("img/bodytausta.jpg");
+    background-size: 100% 100%;
+    color: rgb(0, 255, 42);
+    font-weight: bold;
+    font-family: 'Arial Narrow', Arial, sans-serif;
+    font-size: 120%;
+    padding: 0.2em;
+    }
+    h1.item1 {
+      color: rgb(255, 0, 0);
+      font-weight: bold;
+      font-family: Arial, sans-serif;
+      font-size: 110%;
+      margin-left: 0.5em;
+    }
+    
+    h2.item2 {
+      color: rgb(255, 255, 0);
+      font-weight: bold;
+      font-family: Arial, sans-serif;
+      font-size: 130%;
+      margin-left: 0.5em;
+    }
+    
+    p.item3 {
+      color: rgb(0, 255, 42);
+      font-weight: bold;
+      font-family: 'Arial Narrow', Arial, sans-serif;
+      font-size: 110%;
+      margin-left: 0.5em;
+    }
+    
+    p.item4 {
+      color: rgb(0, 255, 42);
+      font-style: oblique;
+      font-family: 'Arial Narrow', Arial, sans-serif;
+      font-size: 100%;
+      margin-left: 0.5em;
+      margin-bottom: 2em;
+    }
+    
+    h2.item5 {
+      color: rgb(255, 255, 0);
+      font-weight: bold;
+      font-family: Arial, sans-serif;
+      font-size: 120%;
+      border: 10px solid transparent;
+      padding: 10px;
+      border-image: url(img/border.png) 30 round;
+      margin-left: 0.5em;
+      margin-bottom: 0.5em;
+    }
+    
+      .wordart {
+        font-family: Arial, sans-serif;
+        font-size: 4em;
+        font-weight: bold;
+        position: relative;
+        z-index: 1;
+        display: inline-block;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+      
+      .wordart.italic-outline {
+          transform: scale(1, 1.3);
+          -webkit-transform: scale(1, 1.3);
+          -moz-transform: scale(1, 1.3);
+          -o-transform: scale(1, 1.3);
+          -ms-transform: scale(1, 1.3);
+      }
+      
+      .wordart.italic-outline .text {
+          letter-spacing: -0.01em;
+          font-family: Arial, sans-serif;
+          font-weight: bold;
+          font-style: italic;
+          color: rgb(0, 255, 42);
+          -webkit-text-stroke: 0.01em #000;
+          filter: progid:DXImageTransform.Microsoft.Glow(Color=#000000, Strength=1);
+          text-shadow: 0.03em 0.03em 0 rgb(255, 0, 0);
+      }
+    
+    header {
+        border: 0.1em solid rgba(0, 0, 0, 0.01);
+        border-radius: 1em;
+        padding: 0.2em;
+        margin: 0.5em;
+        background-image: url("img/headertausta.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        text-align: center;
+      }
+      
+    nav {
+      border: 0.1em solid rgba(0, 0, 0, 0.01);
+      border-radius: 1em;
+      padding: 0.2em;
+      margin: 0.5em;
+      background: rgba(119, 128, 0, 0.1);
+      background-size: cover;
+    }
+    
+    section {
+      border: 0.1em solid rgba(0, 0, 0, 0.01);
+      border-radius: 1em;
+      padding: 0.2em;
+      margin: 0.5em;
+      background: rgba(119, 128, 0, 0.1);
+      background-size: cover;
+    }
+    
+    aside {
+        text-shadow: 0.1em 0.1em #000000;
+        border: 0.1em solid rgba(0, 0, 0, 0.01);
+        border-radius: 1em;
+        padding: 0.2em;
+        margin: 0.5em;
+        background: rgba(119, 128, 0, 0.1);
+        background-size: cover;
+      }
+    
+      article {
+        text-shadow: 0.1em 0.1em #000000;
+        border: 0.1em solid rgba(0, 0, 0, 0.1);
+        border-radius: 1em;
+        padding: 0.2em;
+        margin: 0.5em;
+        background-image: url("img/maintausta2.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+    
+    footer {
+      font-family: Helvetica, sans-serif;
+      text-shadow: 0.1em 0.1em #000000;
+      border: 0.1em solid rgba(0, 0, 0, 0.01);
+      border-radius: 1em;
+      padding: 0.2em;
+      margin: 0.5em;
+      background-image: url("img/footertausta.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }

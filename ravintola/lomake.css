@@ -1,0 +1,53 @@
+@media screen and (min-width: 200px){
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh; 
+        background-image: url("img/bodytausta.jpg");
+        background-size: 100% 100%;
+        background-repeat: cover;
+        color: rgb(0, 255, 42);
+        font-weight: bold;
+      }
+    }
+    .formContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        border: 0.1em solid rgba(0, 0, 0, 0.01);
+        border-radius: 1em;
+        padding: 0.2em;
+        margin: 0.5em;
+        background: rgba(119, 128, 0, 0.1);
+        background-size: cover;
+      }
+      input {
+        margin-bottom: 5vh;
+        border-right: none;
+        border-top: none;
+        border-left: none;
+        background-color:transparent;
+        outline: none;
+        color: rgb(0, 255, 42);
+        font-weight: bold;
+        caret-color: rgb(0, 255, 42);
+      }
+      input[type=text]::placeholder {
+        text-align: center;
+        color: rgb(0, 255, 42);
+        font-weight: bold;
+        font-family: 'Roboto', sans-serif;
+      }
+
+      input[type=submit] {
+        background: rgba(255,255,255,.2);
+        font-weight: bold;
+        width: 100%;
+        padding: 2vh;
+        border: none;
+        cursor: pointer;
+        border-radius: 4px 4px;
+      }
+

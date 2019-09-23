@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ravintola LAPINTAIKA palaute</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="lomake.css">
+    <!--alla @median alustus-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+</head>
+<body id="body">
+        <div class="formContainer">
+          <h1>Palaute:</h1>
+          <form onSubmit=formSubmit(event)>
+                <p>Vierailupäivä ja klon aika: <input type="datetime-local" name="pvmklo">
+                <br>Oliko ruoka kuumaa (<span style="color:red;">punaista</span>) vai kylmää (<span style="color:blue;">sinistä</span>) vai siltä väliltä: <br><input type="color" name="vari">
+                <br>Ruuan maku: HYVÄÄ <input type="range" name="range"> PAHAA</p>
+                <textarea name="tekstikentta" id="tekstikentta" rows="5" cols="60" placeholder="Anna muuta palautetta!" style="color:white; background-color:rgba(115, 255, 0, 0.5);"></textarea><br><br>
+                <fieldset>
+                        <legend>Henkilötiedot</legend>
+                        <br><input type="text" id="firstname" name="firstname" placeholder="Etunimi" onfocus="this.placeholder=''" onblur="this.placeholder='Etunimi'">
+                        <input type="text" id="lastname" name="lastname" placeholder="Sukunimi" onfocus="this.placeholder=''" onblur="this.placeholder='Sukunimi'"><br>
+                        <input type="text" id="address" name="address" placeholder="Osoite" onfocus="this.placeholder=''" onblur="this.placeholder='Osoite'">
+                        <input type="text" id="phone" name="phone" placeholder="Puhelinnumero" onfocus="this.placeholder=''" onblur="this.placeholder='Puhelinnumero'">
+                </fieldset>
+                <br>
+                <input type="submit" value="Lähetä">
+        </form>
+        </div>
+      </body>
+      <script>
+        function formSubmit(event) {
+          event.preventDefault();
+        }
+      </script>
+</html>
