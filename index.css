@@ -6,12 +6,12 @@ html *
 }
 
 .bottom {
-background-color: rgba(211, 211, 211, 0.739);
+background-color: gainsboro;
 }
 
 .jumbotron {
     /*background-color: lightgreen;*/
-    background-color: green;
+    background-color: dimgrey;
     -webkit-animation-name: example;
     /* Safari 4.0 - 8.0 */
     -webkit-animation-duration: 4s;
@@ -25,22 +25,22 @@ background-color: rgba(211, 211, 211, 0.739);
   /* Safari 4.0 - 8.0 */
   @-webkit-keyframes example {
     from {
-      background-color: green;
+      background-color: dimgrey;
     }
 
     to {
-      background-color: greenyellow;
+      background-color: gainsboro;
     }
   }
 
   /* Standard syntax */
   @keyframes example {
     from {
-      background-color: green;
+      background-color: dimgrey;
     }
 
     to {
-      background-color: greenyellow;
+      background-color: gainsboro;
     }
   }
 
