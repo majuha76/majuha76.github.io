@@ -9,135 +9,7 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <style>
-    .jumbotron {
-      /*background-color: lightgreen;*/
-      background-color: green;
-      -webkit-animation-name: example;
-      /* Safari 4.0 - 8.0 */
-      -webkit-animation-duration: 4s;
-      /* Safari 4.0 - 8.0 */
-      animation-name: example;
-      animation-duration: 4s;
-      animation-direction: alternate-reverse;
-      animation-iteration-count: infinite;
-    }
-
-    /* Safari 4.0 - 8.0 */
-    @-webkit-keyframes example {
-      from {
-        background-color: green;
-      }
-
-      to {
-        background-color: greenyellow;
-      }
-    }
-
-    /* Standard syntax */
-    @keyframes example {
-      from {
-        background-color: green;
-      }
-
-      to {
-        background-color: greenyellow;
-      }
-    }
-
-    h1,
-    h4 {
-      -webkit-animation: color-change 8s infinite;
-      -moz-animation: color-change 8s infinite;
-      -o-animation: color-change 8s infinite;
-      -ms-animation: color-change 8s infinite;
-      animation: color-change 8s infinite;
-    }
-
-    @-webkit-keyframes color-change {
-      0% {
-        color: black;
-      }
-
-      50% {
-        color: white;
-      }
-
-      100% {
-        color: black;
-      }
-    }
-
-    @-moz-keyframes color-change {
-      0% {
-        color: black;
-      }
-
-      50% {
-        color: white;
-      }
-
-      100% {
-        color: black;
-      }
-    }
-
-    @-ms-keyframes color-change {
-      0% {
-        color: black;
-      }
-
-      50% {
-        color: white;
-      }
-
-      100% {
-        color: black;
-      }
-    }
-
-    @-o-keyframes color-change {
-      0% {
-        color: black;
-      }
-
-      50% {
-        color: white;
-      }
-
-      100% {
-        color: black;
-      }
-    }
-
-    @keyframes color-change {
-      0% {
-        color: black;
-      }
-
-      50% {
-        color: white;
-      }
-
-      100% {
-        color: black;
-      }
-    }
-
-    .row {
-      margin-right: inherit;
-      margin-left: inherit;
-    }
-
-    .carousel-inner {
-      border-top: 10px;
-      border-left: 10px;
-      border-right: 10px;
-      border-bottom: 10px;
-      border-color: rgba(255, 255, 255, 0.7);
-      border-style: solid;
-    }
-  </style>
+  <link rel="stylesheet" href="index.css">
   <title>Markon Portfolio</title>
 </head>
 
@@ -145,8 +17,8 @@
   <div class="jumbotron">
     <div class="row">
       <div class="col-12 col-md-4">
-        <h1 class="display-4">Markon Portfolio</h1>
-        <h4 class="lead">Tässä opiskelu- ja työportfolioni</p>
+        <h1 class="display-3">Markon Portfolio</h1>
+        <h2 class="display-5">Tässä opiskelu- ja työportfolioni</h2>
       </div>
 
       <div class="col-12 col-md-4">
@@ -200,7 +72,7 @@
         </div>
 
         <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
-          <div class="card-body">
+          <div class="card-body bottom">
             Hei! Olen vuonna 1976 syntynyt tradenomi Tampereelta ja etsin itselleni uusia haasteellisia työtehtäviä.
             <br><br>Koulutukseni olen saanut Pirkanmaan ammattikorkeakoulun Mäntän toimipisteessä, suuntautumisena
             kaupallinen mediaviestintä eli olen jo opiskellessa saanut tietoa sekä tietotekniikka-alasta että
@@ -222,7 +94,7 @@
           </h2>
         </div>
         <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-          <div class="card-body">
+          <div class="card-body bottom">
             Olen aina ollut "tietokonenörtti" ja koen että tämä koulutus on omiaan minulle.
             Olen uudessa elämäntilanteessa ja ikää on alkanut kertymään, joten nyt viimeistään olisi työuraan päästävä
             kiinni.
@@ -244,7 +116,7 @@
           </h2>
         </div>
         <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-          <div class="card-body">
+          <div class="card-body bottom">
             <ul>
               <li>Pirkamaan Ammattikorkeakoulu, Mäntän toimipiste 01.09.1997 – 27.04.2001 Tradenomi, suuntautuminen
                 kaupallinen mediaviestintä</li>
@@ -263,11 +135,11 @@
 
 
   <div class="container">
-    <div class="row">
-      <div class="col-12 col-md-3">
+    <div class="row text-center">
+      <div class="col-12 col-md-6">
         <div class="card" style="width: 18rem;">
           <img src="img/maatharj.jpg" class="card-img-top" alt="maaharjoitus">
-          <div class="card-body">
+          <div class="card-body bottom">
             <h5 class="card-title">Harjoitustyö 1</h5>
             <p class="card-text">Tässä pikainen html harjoitustyö, jossa esitellään 3 maata: Kolumbia, Irlanti ja Jemen
             </p>
@@ -275,10 +147,11 @@
           </div>
         </div>
       </div>
-      <div class="col-12 col-md-3">
+      <br>
+      <div class="col-12 col-md-6">
         <div class="card" style="width: 18rem;">
           <img src="img/ravinharj.JPG" class="card-img-top" alt="ravintolaharjoitus">
-          <div class="card-body">
+          <div class="card-body bottom">
             <h5 class="card-title">Harjoitustyö 2</h5>
             <p class="card-text">Tässä Gridiä ja Flexboxia yhdistelevä harjoitus, jossa esitellään fiktiivinen ravintola
             </p>
@@ -286,10 +159,13 @@
           </div>
         </div>
       </div>
-      <div class="col-12 col-md-3">
+    </div>
+    <br>
+    <div class="row text-center">
+      <div class="col-12 col-md-6">
         <div class="card" style="width: 18rem;">
           <img src="img/fbpoharj.JPG" class="card-img-top" alt="fbpikaopasharjoitus">
-          <div class="card-body">
+          <div class="card-body bottom">
             <h5 class="card-title">Harjoitustyö 3</h5>
             <p class="card-text">Tässä harjoituksessa tein Wordilla pikaoppaan Facebookin käytöstä ja tallensin sen
               PDF:nä</p>
@@ -297,18 +173,20 @@
           </div>
         </div>
       </div>
-      <div class="col-12 col-md-3">
+      <br>
+      <div class="col-12 col-md-6">
         <div class="card" style="width: 18rem;">
-          <img src="img/fbpoharj.JPG" class="card-img-top" alt="fbpikaopasharjoitus">
-          <div class="card-body">
+          <img src="img/reactharj.JPG" class="card-img-top" alt="reactharjoitus">
+          <div class="card-body bottom">
             <h5 class="card-title">Harjoitustyö 4</h5>
             <p class="card-text">Tässä harjoituksessa tein Reactilla kuvitteellisen verkkokaupan Tredun hatuista</p>
-            <a href="/fanikauppa/index.html" class="btn btn-primary" target="_blank">Fanikauppa (react)</a>
+            <a href="fanikauppa/index.html" class="btn btn-primary" target="_blank">Fanikauppa (react)</a>
           </div>
         </div>
       </div>
     </div>
   </div>
+</div>
   <br><br>
 
   <!-- Optional JavaScript -->
